@@ -11,7 +11,10 @@
   </p>
   <p>
   <a href="https://jeong-jin-han.github.io/">
-    <img src="https://img.shields.io/badge/Visit_Portfolio_&_Blog-View_Projects-006d77?style=for-the-badge&logo=rocket&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Visit_Portfolio_%26_Blog-006d77?style=for-the-badge&logo=rocket&logoColor=white"/>
+  </a>
+  <a href="https://jeong-jin-han.github.io/projects">
+    <img src="https://img.shields.io/badge/View_Projects-2a9d8f?style=for-the-badge&logoColor=white"/>
   </a>
   </p>
   <a href="https://github.com/Jeong-jin-Han"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/></a>
