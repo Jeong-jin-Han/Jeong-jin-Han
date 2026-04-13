@@ -20,9 +20,16 @@
 
 ### <img src="https://img.shields.io/badge/Research_Interests-181717?style=for-the-badge&logoColor=white"/>
 
-* **Computer Architecture** — memory-centric systems and data movement optimization
-* **System-Level Simulation** — large-scale modeling, parallelism, and performance optimization
-* **System State Management** — consistent snapshot, checkpointing, and deterministic execution
+* **Memory Hierarchy & RTL-Level Design** — architectural exploration of memory hierarchy design with interest in RTL-level hardware component development
+* **CXL-Based Disaggregated Memory** — interest in memory-pressure-driven smart routing in CXL-based disaggregated memory systems
+* **Distributed ML State Management** — seamless resumption of distributed ML training through consistent multi-process state capture
+
+<br/>
+
+### <img src="https://img.shields.io/badge/Preprints-181717?style=for-the-badge&logoColor=white"/>
+
+- **[SHIFT](https://arxiv.org/abs/2604.09171)** *(First author)* — Sigmoid-Based Heuristic Invertible Fitness-Landscape Transformation for Accelerating SBST. arXiv:2604.09171, 2025.
+- **[VRAIL](https://arxiv.org/abs/2506.16014)** *(Co-author, equal contribution)* — Vectorized Reward-based Attribution for Interpretable Learning. arXiv:2506.16014, 2025.
 
 <br/>
 
@@ -30,26 +37,23 @@
 
 &emsp;**Nuclear I&C and Autonomous Operation Lab @ KAIST** *(Winter 2025)*
 * *Advisor: Prof. Jonghyun Kim*
-* Designed and developed an autonomous boron concentration control system for iPWR using DreamerV3-based world-model RL.
-* Built a TCP/Docker-based training interface by reverse-engineering simulator memory and execution flow.
-* Addressed system-level control challenges under delayed, partially observable environments.
+* Identified system-level bottlenecks under memory and bandwidth constraints across heterogeneous CPU–GPU pipelines.
+* Led pipeline redesign to resolve a GPU underutilization bottleneck caused by a CPU-bound simulator; decoupled policy optimization from environment interaction, improving hardware utilization.
+* Reverse-engineered the process memory layout of a closed-source Windows VM simulator to extract and inject runtime state variables, enabling system integration without source access or binary modification.
+* Designed and implemented a TCP/Docker-based distributed execution infrastructure bridging a Windows VM and a GPU server, managing cross-system state synchronization under memory bandwidth and latency constraints.
 
 &emsp;**Reactor Physics and Transmutation Lab @ KAIST** *(Winter 2024)*
 * *Advisor: Prof. Yonghee Kim*
-* Conducted Monte Carlo neutron transport simulations using OpenMC.
-* Analyzed neutron moderation behavior with thermal scattering models (ENDF/B-VIII.1).
-* Investigated computational and memory characteristics of large-scale Monte Carlo simulation workloads.
-* Analyzed scalability behavior under parallel execution.
+* Conducted Monte Carlo neutron transport simulations using OpenMC, analyzing neutron moderation behavior under Thermal Scattering Law (TSL) models from the ENDF/B-VIII.1 nuclear data library.
+* Investigated computational and memory characteristics of large-scale Monte Carlo simulation workloads, and analyzed scalability behavior under parallel execution.
 
 <br/>
 
 ### <img src="https://img.shields.io/badge/Selected_Projects-181717?style=for-the-badge&logoColor=white"/>
 
-- **[KECC](https://github.com/Jeong-jin-Han/CS420-KECC)** — Designed and optimized a C-to-RISC-V compiler in Rust (SSA, GVN, Mem2reg, DCE, Asmgen);
-  evaluated on gem5 cycle-accurate architecture simulator (1.009x vs. Clang -O1, 37/60 benchmarks outperforming Clang).
-- **[VRAIL](https://arxiv.org/abs/2506.16014)** — Bi-level interpretable RL framework; shaped reward transfer improves DQN convergence (arXiv:2506.16014).
-- **[SHIFT](https://github.com/Jeong-jin-Han/SHIFT-SBST)** — Sigmoid-based invertible fitness-landscape transformation for SBST hill climbing.
-- **Nuclear System Code** — Multi-channel 1-D FVM nuclear system code in MATLAB; steady-state and overcooling transient validated against MARS; analyzed system-level transient behavior and execution dynamics.
+- **[KECC](https://github.com/Jeong-jin-Han/CS420-KECC)** — Designed and implemented a full C-to-RISC-V compiler in Rust (SSA-based IR: Mem2reg, GVN, DCE, Asmgen); conducted independent cycle-level performance evaluation using gem5 v25.1 MinorCPU (1.009× vs. Clang -O1, 37/60 benchmarks outperforming Clang).
+- **MIPS 5-Stage Pipelined CPU** — Implemented full MIPS 5-stage pipeline in C (CS311, Spring 2024) with forwarding unit, hazard detection, and 1-bit branch predictor (BHT + BTB); re-implemented in Verilog for RTL-level simulation (Spring 2026).
+- **Nuclear System Code** — Multi-channel 1-D FVM nuclear system code in MATLAB; validated against MARS code across 10 physical quantities.
 
 <br/>
 
@@ -61,6 +65,7 @@
   <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white"/>
   <img src="https://img.shields.io/badge/Scala-DC322F?style=flat-square&logo=scala&logoColor=white"/>
   <img src="https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Verilog-FF6F00?style=flat-square&logoColor=white"/>
   <br/>
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
   <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black"/>
